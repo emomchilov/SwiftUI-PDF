@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		41F9BED92B4E1DEB00C49300 /* SwiftUIPDFsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BED82B4E1DEB00C49300 /* SwiftUIPDFsApp.swift */; };
-		41F9BEDB2B4E1DEB00C49300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEDA2B4E1DEB00C49300 /* ContentView.swift */; };
+		41F9BEDB2B4E1DEB00C49300 /* SharePDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEDA2B4E1DEB00C49300 /* SharePDFView.swift */; };
 		41F9BEDD2B4E1DEC00C49300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F9BEDC2B4E1DEC00C49300 /* Assets.xcassets */; };
 		41F9BEE02B4E1DEC00C49300 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F9BEDF2B4E1DEC00C49300 /* Preview Assets.xcassets */; };
+		41F9BEE72B4E208200C49300 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEE62B4E208200C49300 /* PDFView.swift */; };
+		41F9BEEB2B4E21C200C49300 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEEA2B4E21C200C49300 /* PDFCreator.swift */; };
+		41F9BEEF2B4E3ABF00C49300 /* PDFInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEEE2B4E3ABF00C49300 /* PDFInfo.swift */; };
+		41F9BEF12B4E3DD100C49300 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9BEF02B4E3DD100C49300 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41F9BED52B4E1DEB00C49300 /* SwiftUIPDFs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPDFs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F9BED82B4E1DEB00C49300 /* SwiftUIPDFsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPDFsApp.swift; sourceTree = "<group>"; };
-		41F9BEDA2B4E1DEB00C49300 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41F9BEDA2B4E1DEB00C49300 /* SharePDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePDFView.swift; sourceTree = "<group>"; };
 		41F9BEDC2B4E1DEC00C49300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41F9BEDF2B4E1DEC00C49300 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41F9BEE62B4E208200C49300 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		41F9BEEA2B4E21C200C49300 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
+		41F9BEEE2B4E3ABF00C49300 /* PDFInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInfo.swift; sourceTree = "<group>"; };
+		41F9BEF02B4E3DD100C49300 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				41F9BED82B4E1DEB00C49300 /* SwiftUIPDFsApp.swift */,
-				41F9BEDA2B4E1DEB00C49300 /* ContentView.swift */,
+				41F9BEDA2B4E1DEB00C49300 /* SharePDFView.swift */,
+				41F9BEE62B4E208200C49300 /* PDFView.swift */,
+				41F9BEF02B4E3DD100C49300 /* Constants.swift */,
+				41F9BEEA2B4E21C200C49300 /* PDFCreator.swift */,
+				41F9BEEE2B4E3ABF00C49300 /* PDFInfo.swift */,
 				41F9BEDC2B4E1DEC00C49300 /* Assets.xcassets */,
 				41F9BEDE2B4E1DEC00C49300 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F9BEDB2B4E1DEB00C49300 /* ContentView.swift in Sources */,
+				41F9BEEF2B4E3ABF00C49300 /* PDFInfo.swift in Sources */,
+				41F9BEE72B4E208200C49300 /* PDFView.swift in Sources */,
+				41F9BEDB2B4E1DEB00C49300 /* SharePDFView.swift in Sources */,
 				41F9BED92B4E1DEB00C49300 /* SwiftUIPDFsApp.swift in Sources */,
+				41F9BEEB2B4E21C200C49300 /* PDFCreator.swift in Sources */,
+				41F9BEF12B4E3DD100C49300 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

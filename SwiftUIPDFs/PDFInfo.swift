@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct PDFInfo {
+    let title: String
+    let image: Image
+    let description: String
+}

@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct SharePDFView: View {
+    @Environment(\.displayScale) var displayScale
     @State private var exportPDF: Bool = false
+    
+    let pdfCreator = PDFCreator(multiplePages: [
+        PDFInfo(title: "Page 1", image: Image("wavy_rock"), description: "This is my first PDF page. Here is a stock photo of a rock."),
+        PDFInfo(title: "Page 1", image: Image("leaf"), description: "This is my first PDF page. Here is a stock photo of a leaf."),
+        PDFInfo(title: "Page 1", image: Image("another_leaf"), description: "This is my first PDF page. Here is a stock photo of another leaf.")
+    ])
+    
     var body: some View {
         VStack {
-            Button(action: {
-                exportPDF = true
-            }, label: {
-                Text("Export PDF via Share Sheet")
-            })
+            ShareLink(item: pdfCreator.createPDFData(displayScale: displayScale))
         }
-        .sheet(isPresented: $exportPDF, content: {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Sheet Content")/*@END_MENU_TOKEN@*/
-        })
         .padding()
     }
 }
