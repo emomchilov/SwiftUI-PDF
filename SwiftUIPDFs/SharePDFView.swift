@@ -13,8 +13,8 @@ struct SharePDFView: View {
     
     let pdfCreator = PDFCreator(multiplePages: [
         PDFInfo(title: "Page 1", image: Image("wavy_rock"), description: "This is my first PDF page. Here is a stock photo of a rock."),
-        PDFInfo(title: "Page 1", image: Image("leaf"), description: "This is my first PDF page. Here is a stock photo of a leaf."),
-        PDFInfo(title: "Page 1", image: Image("another_leaf"), description: "This is my first PDF page. Here is a stock photo of another leaf.")
+        PDFInfo(title: "Page 2", image: Image("leaf"), description: "This is my first PDF page. Here is a stock photo of a leaf."),
+        PDFInfo(title: "Page 3", image: Image("another_leaf"), description: "This is my first PDF page. Here is a stock photo of another leaf.")
     ])
     
     var body: some View {

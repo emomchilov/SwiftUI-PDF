@@ -27,13 +27,17 @@ class PDFCreator {
         self.multiplePages = multiplePages
     }
     
-   @MainActor
-   func createPDFData(displayScale: CGFloat) -> URL {
+    @MainActor
+    func createPDFData(displayScale: CGFloat) -> URL {
         let format = UIGraphicsPDFRendererFormat()
         format.documentInfo = metaData as [String : Any]
         let renderer = UIGraphicsPDFRenderer(bounds: rect, format: format)
         
-        let data = renderer.pdfData { context in
+        let tempFolder = FileManager.default.temporaryDirectory
+        let fileName = "My Custom PDF Title.pdf"
+        let tempURL = tempFolder.appendingPathComponent(fileName)
+        
+        try? renderer.writePDF(to: tempURL) { context in
             for info in multiplePages {
                 context.beginPage()
                 let imageRenderer = ImageRenderer(content: PDFView(info: info))
@@ -41,13 +45,7 @@ class PDFCreator {
                 imageRenderer.uiImage?.draw(at: CGPoint.zero)
             }
         }
-       
-       let tempFolder = FileManager.default.temporaryDirectory
-       let fileName = "My Custom PDF Title.pdf"
-       let tempURL = tempFolder.appendingPathComponent(fileName)
-       
-       try? data.write(to: tempURL)
-       return tempURL
+
+        return tempURL
     }
-    
 }
