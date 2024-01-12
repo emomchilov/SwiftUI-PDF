@@ -1,7 +1,7 @@
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 
 # SwiftUI PDF Generator Sample Project #
-Welcome to the SwiftUI PDF Generator sample project! This project demonstrates how to create and share a PDF from a SwiftUI view using the ImageRenderer. Whether you want to document your SwiftUI designs, create polished presentations, or share visual content, this sample project guides you through the process seamlessly.
+Welcome to the SwiftUI PDF Generator sample project! This project demonstrates how to create and share a PDF from a SwiftUI view using the ImageRenderer. Whether you want to document your SwiftUI designs, create polished presentations, or share visual content, this sample project is here to guide you through the process.
 
 ## Getting Started ##
 Follow these steps to integrate SwiftUI PDF generation into your project:
